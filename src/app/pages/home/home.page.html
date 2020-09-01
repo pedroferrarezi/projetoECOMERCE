@@ -18,14 +18,18 @@
     </ion-slides>
 
 
-
+    <!-- <ion-slides class="icons" [options]="slideOptsIcons" #slide (ionSlideDidChange)="SlideDidChange(slider,slide)">
+      <ion-slide *ngFor="let sliderIcon of sliderIcons.slidesItems">
+        <img src="{{slider.url}}">
+      </ion-slide>
+    </ion-slides> -->
     
   
 
   <ion-card class="ion-padding lojasPromocao">
     <div class="background">
       <div class="ion-text-center texto"> Lojas em Promoção </div>
-      <ion-card-subtitle class="sub">Lojas que amamos em promoção nesse lindo final de semana.</ion-card-subtitle>
+      <ion-card-subtitle class="sub ion-text-center">Lojas que amamos em promoção nesse lindo final de semana.</ion-card-subtitle>
     <ion-card-content>
       <ion-slides class="opacity-transition" [options]="slidesOptions">
         <ion-slide *ngFor="let card of cards">
@@ -41,10 +45,10 @@
     <ion-card class="ion-padding novosProdutos">
       <div class="background">
         <div class="ion-text-center texto"> Novos Produtos </div>
-        <ion-card-subtitle class="sub">Venha ver os novos produtos adicionados em nosso aplicativo.</ion-card-subtitle>
+        <ion-card-subtitle class="sub ion-text-center">ha ver os novos produtos adicionados em nosso aplicativo.</ion-card-subtitle>
       <ion-card-content>
         <ion-slides class="opacity-transition" [options]="slidesOptions">
-          <ion-slide *ngFor="let newProdutos of newProdutos ">
+          <ion-slide *ngFor="let newProdutos of newProdutos">
             <div class="container ion-text-left">
             <img src="{{newProdutos.url}}">
           </div>
@@ -59,7 +63,7 @@
       <ion-card class="ion-padding entrega">
         <div class="background">
           <div class="ion-text-center texto"> Entrega Gratuita </div>
-          <ion-card-subtitle class="sub">Receba no conforto da sua casa sem gastar um centavo.</ion-card-subtitle>
+          <ion-card-subtitle class="sub ion-text-center">Receba no conforto da sua casa sem gastar um centavo.</ion-card-subtitle>
         <ion-card-content>
           <ion-slides class="opacity-transition" [options]="slidesOptions">
             <ion-slide *ngFor="let entregaGratis of entregaGratis">
@@ -76,7 +80,7 @@
         <ion-card class="ion-padding abertas">
           <div class="background">
             <div class="ion-text-center texto"> Lojas Abertas </div>
-            <ion-card-subtitle class="sub">Lojas que podem te atender nesse momento.</ion-card-subtitle>
+            <ion-card-subtitle class="sub ion-text-center">Lojas que podem te atender nesse momento.</ion-card-subtitle>
           <ion-card-content>
             <ion-slides class="opacity-transition" [options]="slidesOptions">
               <ion-slide *ngFor="let lojasAbertas of lojasAbertas">
@@ -93,7 +97,7 @@
           <ion-card class="ion-padding curtidas">
             <div class="background">
               <div class="ion-text-center texto"> As Lojas mais curtidas </div>
-              <ion-card-subtitle class="sub">As mais recomendadas pelos nossos clientes.</ion-card-subtitle>
+              <ion-card-subtitle class="sub ion-text-center">As mais recomendadas pelos nossos clientes.</ion-card-subtitle>
             
             <ion-card-content>
               <ion-slides class="opacity-transition" [options]="slidesOptions">
@@ -107,9 +111,12 @@
               </div>
             </ion-card>
 
-
-
-
-
+      <ion-footer class="ion-no-border">
+        <ion-toolbar class="baixo ion-no-margin ion-padding-vertical" color="medium">
+          <div class="footer ion-text-center">
+          <span class="ion-text-left"> Entre em contato conosco pelas redes sociais.</span>
+          </div>
+        </ion-toolbar>
+      </ion-footer>
 
 </ion-content>

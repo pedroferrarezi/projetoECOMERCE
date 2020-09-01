@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-icon class="pesquisa" name="search-outline"></ion-icon>
+    <ion-icon name="basket-outline" slot="end" size="large"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="medium">
+
+  <div class="titulo ion-text-center texto">  Lista de compra </div>
+
+  <ion-card>
+    <ion-item *ngFor="let newProdutos of newProdutos" class="ion-activated">
+      <div class="container ion-text-center">
+        <img src="{{newProdutos.url}}">
+      </div>
+      <ion-label class="ion-text-center">Hamburguer Gourmet</ion-label>
+    </ion-item>
+ 
+  
+    <ion-item *ngFor="let newProdutos1 of newProdutos1" class="ion-activated">
+      <div class="container ion-text-center">
+        <img src="{{newProdutos1.url}}">
+      </div>
+      <ion-label class="ion-text-center">Pizza Gourmet</ion-label>
+    </ion-item>
+ 
+    <ion-item *ngFor="let newProdutos2 of newProdutos2 " class="ion-activated">
+      <div class="container ion-text-center">
+        <img src="{{newProdutos2.url}}">
+      </div>
+      <ion-label class="ion-text-center">Batata Frita Gourmet</ion-label>
+    </ion-item>
+  </ion-card>
+  
+
+
+</ion-content>

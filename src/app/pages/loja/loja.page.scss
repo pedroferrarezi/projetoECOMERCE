@@ -1,0 +1,75 @@
+.titulo {
+    margin-top: 5px;
+    position: relative;
+    padding: 9px;
+}
+
+
+
+.banner {
+    background: url("https://lojasilvaevoce.files.wordpress.com/2011/12/lojas-silva-lencois-paulista04.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    padding: 15px;
+}
+
+ion-item {
+    background: transparent;
+}
+
+.horario {
+    margin-top: 5px;
+    font-size: 12px;
+
+
+}
+
+.categorias {
+    font-size: 10px;
+}
+
+.segment {
+    ion-label {
+        font-size: 12px;
+    }
+}
+
+.posts {
+    img {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+
+ion-card{
+    
+    width: 50%;
+    width: 80%;
+    background: #ffff;
+    position: center;
+    padding: 16px;
+    margin: 25px;
+    .texto{
+        font-size: 20px;
+    }
+    ion-card-content{
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .texto{
+        padding: 10px;
+    }
+    .sub{
+        margin-top: 8px;
+        font-size: 10px;
+
+    }
+    .valor{
+        margin-top: 5px;
+    }
+}
